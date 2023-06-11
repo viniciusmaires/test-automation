@@ -4,6 +4,8 @@
 
 > Link do site Dental Cremer: [Dental Cremer](https://staging01.dentalcremer.com.br)
 
+> Cypress 12.0.2
+
 ## Arquivos no repositório
 
 + Pasta com os comandos e os testes de login e checkout;
