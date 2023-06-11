@@ -81,8 +81,6 @@ Cypress.Commands.add('login_password_empty', (
   login_password_empty()
 })
 
-
-
 //*****************************CHECKOUT*****************************
 
 /*
