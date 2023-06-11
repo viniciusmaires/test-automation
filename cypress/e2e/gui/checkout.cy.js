@@ -2,7 +2,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   return false;
 });
 
-describe('Products', () => {
+describe('Checkouts', () => {
   beforeEach(() => {
     cy.login()
   })
