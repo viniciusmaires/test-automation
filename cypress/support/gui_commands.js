@@ -20,11 +20,11 @@ Cypress.Commands.add('login', (
     login()
 })
 
-Cypress.Commands.add('login_wrong', (
+Cypress.Commands.add('user_name_wrong', (
   user = Cypress.env('user_name_wrong'),
   password = Cypress.env('user_password'),
 ) => {
-  const login_wrong = () => {
+  const user_name_wrong = () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
       return false
     })
@@ -36,7 +36,7 @@ Cypress.Commands.add('login_wrong', (
     cy.get('#password-header').type(password, { log: false }, {force: true})
     cy.get('#header-send2').click()
   }
-  login_wrong()
+  user_name_wrong()
 })
 
 Cypress.Commands.add('password_wrong', (

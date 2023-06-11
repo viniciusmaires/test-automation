@@ -1,7 +1,7 @@
 describe('Login', () => {
   
-  it('Login Wrong', () => {
-    cy.login_wrong()
+  it('Username Wrong', () => {
+    cy.user_name_wrong()
     cy.get('.jq-toast-text-container').should('be.visible')
   })
 
@@ -10,7 +10,7 @@ describe('Login', () => {
     cy.get('.jq-toast-text-container').should('be.visible')
   })
 
-  it('Login and Password Empty', () => {
+  it('Username and Password Empty', () => {
     cy.login_password_empty()
     cy.get('#email-header-error').should('be.visible')
   })
