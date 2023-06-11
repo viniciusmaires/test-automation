@@ -1,6 +1,7 @@
 
 //*****************************LOGIN*****************************
 
+//Login com sucesso
 Cypress.Commands.add('login', (
     user = Cypress.env('user_name'),
     password = Cypress.env('user_password'),
@@ -20,6 +21,7 @@ Cypress.Commands.add('login', (
     login()
 })
 
+//Username incorreto
 Cypress.Commands.add('user_name_wrong', (
   user = Cypress.env('user_name_wrong'),
   password = Cypress.env('user_password'),
@@ -39,6 +41,7 @@ Cypress.Commands.add('user_name_wrong', (
   user_name_wrong()
 })
 
+//Password incorreto
 Cypress.Commands.add('password_wrong', (
   user = Cypress.env('user_name'),
   password = Cypress.env('user_password_wrong'),
@@ -58,6 +61,7 @@ Cypress.Commands.add('password_wrong', (
   password_wrong()
 })
 
+//Username e Password vazios
 Cypress.Commands.add('login_password_empty', (
   user = Cypress.env('user_name_empty'),
   password = Cypress.env('user_password_empty'),
@@ -81,6 +85,10 @@ Cypress.Commands.add('login_password_empty', (
 
 //*****************************CHECKOUT*****************************
 
+/*
+Checkout com boleto.
+Consultar Produto Exemplo: SKU 125231
+*/
 Cypress.Commands.add('gui_boletoCheckout', (
     name1 = Cypress.env('name1'),
     cep = Cypress.env('cep'),
@@ -107,6 +115,10 @@ Cypress.Commands.add('gui_boletoCheckout', (
 
 })
 
+/*
+Checkout com boleto parcelado.
+Consultar Produto Exemplo: Máscara Descartável Tripla com Clipe Nasal Branca - Sp Protection
+*/
 Cypress.Commands.add('gui_boletoParceladoCheckout', (
   name2 = Cypress.env('name2'),
   cep = Cypress.env('cep'),
@@ -134,6 +146,10 @@ Cypress.Commands.add('gui_boletoParceladoCheckout', (
 
 })
 
+/*
+Checkout com cartão de crédito.
+Consultar Produto Exemplo: SKU 125231
+*/
 Cypress.Commands.add('gui_cartaoCreditoCheckout', (
   name1 = Cypress.env('name1'),
   cep = Cypress.env('cep'),
