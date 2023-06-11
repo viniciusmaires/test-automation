@@ -1,5 +1,5 @@
-import { faker } from '@faker-js/faker'
 
+//*****************************LOGIN*****************************
 
 Cypress.Commands.add('login', (
     user = Cypress.env('user_name'),
@@ -76,6 +76,10 @@ Cypress.Commands.add('login_password_empty', (
   }
   login_password_empty()
 })
+
+
+
+//*****************************CHECKOUT*****************************
 
 Cypress.Commands.add('gui_boletoCheckout', (
     name1 = Cypress.env('name1'),
