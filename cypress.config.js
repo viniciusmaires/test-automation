@@ -2,7 +2,7 @@ const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://staging01.dentalcremer.com.br',
+    baseUrl: 'http://localhost:3000/#/sign_in?last_page=/',
     env: {
       hideCredentials: true,
       requestMode: true,
